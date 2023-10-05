@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+     
+
+     form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid hsl(0, 0%, 80%);
+            border-radius: 5px;
+        }
+
+        label {
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="radio"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid hsl(0, 0%, 80%);
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: hsl(211, 100%, 50%);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(211, 100%, 50%); 
+    color: hsl(0, 0%, 100%); 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+button:hover {
+    background-color: hsl(211, 100%, 35%);
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+    </style>
+</head>
+<body>
+    <form>
+        <label for="full_name">Full Name</label>
+        <input type="text" name="full_name">
+
+        <label for="username">Username</label>
+        <input type="text" name="username">
+
+        <label for="password">Password</label>
+        <input type="password" name="password">
+
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" name="confirm_password">
+
+        <label for="day_of_birth">Day of Birth:</label>
+        <input type="date" name="day_of_birth">
+
+        <label>Gender:</label>
+        <input type="radio" name="gender"><label for="male">Male</label>
+        <input type="radio" name="gender"><label for="female">Female</label>
+
+        <br>
+       <input type="submit" value="Register">
+    </form>
+
+    <button><a href="index.html">Back To Main page</a></button>
+</body>
+</html>

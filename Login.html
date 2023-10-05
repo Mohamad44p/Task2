@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    
+    form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid hsla(100, 60%, 14%, 0.945);
+            border-radius: 5px;
+        }
+
+        label {
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        input[type="password"]{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid hsl(137, 57%, 15%);
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: hsl(121, 76%, 12%);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(211, 100%, 50%); 
+    color: hsl(0, 0%, 100%); 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+button:hover {
+    background-color: hsl(211, 100%, 35%);
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+  </style>
+</head>
+<body>
+  <form>
+    <label for="username">Username</label>
+    <input type="text" name="username">
+
+    <label for="password">Password</label>
+    <input type="password" name="password">
+
+    <input type="submit" value="Login">
+  </form>
+
+  <button><a href="index.html">Back To Main page</a></button>
+</body>
+</html>
